@@ -221,7 +221,7 @@ body {
     top: 0;
     left: 0;
     z-index: 0;
-    display: none;
+    /* display: none; */
 
 
 }
@@ -235,8 +235,50 @@ body {
     top: 0.5vw;
     left: 30vw;
     transform: rotate(8deg);
-    display: none;
+    /* display: none; */
 }
+
+/********ANIMATION FADE UD V. TRYK PÅ PLAY KNAP***********/
+
+.fade_out_intro {
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* .fade_out_introskaerm {
+    animation-name: fade;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+} */
 
 /*******************SPIL SKÆRM*********************/
 
@@ -248,7 +290,7 @@ body {
     height: 56.25vw;
     top: 0;
     left: 0;
-    /* display: none; */
+    display: none;
 
 }
 
@@ -260,7 +302,7 @@ body {
     height: 10vw;
     top: 11vw;
     left: 56.8vw;
-    /* display: none; */
+    display: none;
 }
 
 #lilla_kolbe {
@@ -271,7 +313,7 @@ body {
     height: 10.5vw;
     top: 28.5vw;
     left: 80vw;
-    /* display: none; */
+    display: none;
 }
 
 #lime_kolbe {
@@ -282,7 +324,7 @@ body {
     height: 10.5vw;
     top: 19vw;
     left: 65.8vw;
-    /* display: none; */
+    display: none;
 }
 
 #pink_kolbe {
@@ -293,7 +335,7 @@ body {
     height: 5vw;
     top: 19vw;
     left: 74.3vw;
-    /* display: none; */
+    display: none;
 }
 
 #groen_kolbe {
@@ -304,7 +346,7 @@ body {
     height: 9vw;
     top: 31.3vw;
     left: 66.7vw;
-    /*  display: none; */
+    display: none;
 }
 
 #gul_kolbe {
@@ -315,7 +357,7 @@ body {
     height: 8vw;
     top: 26vw;
     left: 56.6vw;
-    /* display: none; */
+    display: none;
 }
 
 #orange_kolbe {
@@ -326,7 +368,7 @@ body {
     height: 10vw;
     top: 12vw;
     left: 79.9vw;
-    /*  display: none; */
+    display: none;
 }
 
 #roed_kolbe {
@@ -337,7 +379,7 @@ body {
     height: 5vw;
     top: 12vw;
     left: 70.3vw;
-    /*  display: none; */
+    display: none;
 }
 
 #bombe {
@@ -348,7 +390,7 @@ body {
     height: 8.5vw;
     top: 43.5vw;
     left: 35vw;
-    /*  display: none; */
+    display: none;
 }
 
 
@@ -378,7 +420,7 @@ body {
     height: 9vw;
     top: 43.5vw;
     left: 81vw;
-    /* display: none; */
+    display: none;
 }
 
 #energi {
@@ -389,7 +431,7 @@ body {
     height: 2.5vw;
     top: 47.5vw;
     left: 45vw;
-    /* display: none; */
+    display: none;
 }
 
 #time {
@@ -400,7 +442,7 @@ body {
     height: 15.7vw;
     left: 0.5vw;
     top: 1vw;
-    /* display: none; */
+    display: none;
 }
 
 #draabe {
@@ -412,6 +454,7 @@ body {
     top: 27vw;
     left: 32vw;
     z-index: 3;
+    display: none;
 
 }
 
@@ -424,6 +467,7 @@ body {
     top: 0vw;
     left: 25vw;
     z-index: 4;
+    display: none;
 }
 
 #bla_boble {
@@ -436,6 +480,7 @@ body {
     left: 35vw;
     opacity: 0.8;
     z-index: 4;
+    display: none;
 }
 
 
