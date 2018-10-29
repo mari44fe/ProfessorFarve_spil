@@ -1,0 +1,449 @@
+#screen {
+    position: relative;
+    width: 100vw;
+    height: 56.25vw;
+}
+
+body {
+    margin: 0;
+}
+
+/************START SKÆRM*******************/
+
+#start {
+    background-image: url(grafik/title_skaerm.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 100%;
+    width: 100vw;
+    height: 56.25vw;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* display: none; */
+}
+
+#play_knap {
+    background-image: url(grafik/play_knap.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 19vw;
+    height: 26vw;
+    top: 16vw;
+    left: 40vw;
+    z-index: 1;
+    /* display: none; */
+}
+
+.fade_out {
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+
+#lime_boble {
+    background-image: url(grafik/lime_boble.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 5vw;
+    width: 5vw;
+    top: 15vw;
+    left: 50vw;
+    z-index: 5;
+}
+
+#lime_boble2 {
+    background-image: url(grafik/lime_boble2.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 6vw;
+    width: 6vw;
+    top: 5vw;
+    left: 45vw;
+    z-index: 6;
+}
+
+#pink_boble {
+    background-image: url(grafik/pink_boble.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 3vw;
+    width: 3vw;
+    top: 23vw;
+    left: 50vw;
+    z-index: 6;
+}
+
+#pink_boble2 {
+    background-image: url(grafik/pink_boble2.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 4vw;
+    width: 4vw;
+    top: 13vw;
+    left: 45vw;
+    z-index: 6;
+}
+
+#setting_knap {
+    background-image: url(grafik/setting_knap.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    left: 92.5vw;
+    top: 1vw;
+}
+
+.boble_fly_up {
+    animation-name: fly_up;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fly_up {
+    0% {
+        transform: translateY(2vw);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+}
+
+/**************BAGGRUND****************/
+
+#game_background {
+    background-image: url(grafik/baggrund.svg);
+    background-size: 100%;
+    width: 100vw;
+    height: 56.25vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: none;
+}
+
+/********************SETTINGS*******************/
+
+#settings {
+    background-image: url(grafik/settings_menu.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 2vw;
+    left: 10vw;
+    width: 85vw;
+    height: 51vw;
+    z-index: 1;
+    display: none;
+
+}
+
+#on {
+    background-image: url(grafik/on_off_knap.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 29vw;
+    height: 8.9vw;
+    top: 17vw;
+    left: 50vw;
+    z-index: 2;
+    display: none;
+
+
+}
+
+#off {
+    background-image: url(grafik/on_off_knap_1.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 15vw;
+    height: 4.5vw;
+    top: 27.5vw;
+    left: 65.5vw;
+    z-index: 2;
+    display: none;
+
+
+}
+
+#tilbage {
+    background-image: url(grafik/tilbage_knap.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 12vw;
+    height: 12vw;
+    top: 34.5vw;
+    left: 48.5vw;
+    z-index: 2;
+    display: none;
+
+}
+
+
+/******************INTRO SKÆRM**********************/
+
+#game_foreground_intro {
+    background-image: url(grafik/intro_skaerm.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 100vw;
+    height: 56.25vw;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    display: none;
+
+
+}
+
+#intro_tekst {
+    background-image: url(grafik/intro_tekst.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 65vw;
+    height: 40vw;
+    top: 0.5vw;
+    left: 30vw;
+    transform: rotate(8deg);
+    display: none;
+}
+
+/*******************SPIL SKÆRM*********************/
+
+#game_foreground_spil {
+    background-image: url(grafik/spil_skaerm.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 100vw;
+    height: 56.25vw;
+    top: 0;
+    left: 0;
+    display: none;
+
+}
+
+#bla_kolbe {
+    background-image: url(grafik/bla_kolbe.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 8vw;
+    height: 10vw;
+    top: 11vw;
+    left: 56.8vw;
+    display: none;
+}
+
+#lilla_kolbe {
+    background-image: url(grafik/lilla_kolbe.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 7.5vw;
+    height: 10.5vw;
+    top: 28.5vw;
+    left: 80vw;
+    display: none;
+}
+
+#lime_kolbe {
+    background-image: url(grafik/lime_kolbe.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 3vw;
+    height: 10.5vw;
+    top: 19vw;
+    left: 65.8vw;
+    display: none;
+}
+
+#pink_kolbe {
+    background-image: url(grafik/pink_kolbe.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    top: 19vw;
+    left: 74.3vw;
+    display: none;
+}
+
+#groen_kolbe {
+    background-image: url(grafik/groen_kolbe.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 6.5vw;
+    height: 9vw;
+    top: 31.3vw;
+    left: 66.7vw;
+    display: none;
+}
+
+#gul_kolbe {
+    background-image: url(grafik/gul_kolbe.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 7.5vw;
+    height: 8vw;
+    top: 26vw;
+    left: 56.6vw;
+    display: none;
+}
+
+#orange_kolbe {
+    background-image: url(grafik/orange_kolbe.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 8vw;
+    height: 10vw;
+    top: 12vw;
+    left: 79.9vw;
+    display: none;
+}
+
+#roed_kolbe {
+    background-image: url(grafik/roed_kolbe.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    top: 12vw;
+    left: 70.3vw;
+    display: none;
+}
+
+#bombe {
+    background-image: url(grafik/bombe.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 9vw;
+    height: 8.5vw;
+    top: 43.5vw;
+    left: 35vw;
+    display: none;
+}
+
+#points {
+    background-image: url(grafik/level_up_knap.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 10vw;
+    height: 9vw;
+    top: 43.5vw;
+    left: 81vw;
+    display: none;
+}
+
+#energi {
+    background-image: url(grafik/energi_bar.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 36vw;
+    height: 2.5vw;
+    top: 47.5vw;
+    left: 45vw;
+    display: none;
+}
+
+#time {
+    background-image: url(grafik/stopur.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 14vw;
+    height: 15.7vw;
+    left: 0.5vw;
+    top: 1vw;
+    display: none;
+}
+
+/*********************GAME OVER*********************/
+
+#game_foreground_gameover {
+    background-image: url(grafik/game_over_skaerm.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 100vw;
+    height: 56.25vw;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: none;
+
+
+}
+
+#gameover {
+    background-image: url(grafik/game_over.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 62vw;
+    height: 38vw;
+    top: 5vw;
+    left: 38vw;
+    transform: rotate(2deg);
+    display: none;
+
+}
+
+#try_again {
+    background-image: url(grafik/try_again.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 9vw;
+    height: 9vw;
+    position: absolute;
+    top: 22vw;
+    left: 45vw;
+    z-index: 10;
+    display: none;
+
+}
+
+/*************LEVEL UP***************/
+
+#levelcomplete {
+    background-image: url(grafik/level_up.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 65vw;
+    height: 35.8vw;
+    top: 5vw;
+    left: 33vw;
+    transform: rotate(2deg);
+    display: none;
+
+}
+
+#try_again2 {
+    background-image: url(grafik/try_again.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    top: 20vw;
+    left: 48vw;
+    display: none;
+
+
+}
