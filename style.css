@@ -164,7 +164,7 @@ body {
     width: 85vw;
     height: 51vw;
     z-index: 1;
-    display: none;
+    /* display: none; */
 
 }
 
@@ -177,7 +177,7 @@ body {
     top: 17vw;
     left: 50vw;
     z-index: 2;
-    display: none;
+    /* display: none; */
 
 
 }
@@ -191,7 +191,7 @@ body {
     top: 27.5vw;
     left: 65.5vw;
     z-index: 2;
-    display: none;
+    /* display: none; */
 
 
 }
@@ -205,10 +205,27 @@ body {
     top: 34.5vw;
     left: 48.5vw;
     z-index: 2;
-    display: none;
+    /* display: none; */
 
 }
 
+.fade_out {
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
 
 /******************INTRO SKÆRM**********************/
 
@@ -221,7 +238,7 @@ body {
     top: 0;
     left: 0;
     z-index: 0;
-    /* display: none; */
+    display: none;
 
 
 }
@@ -235,20 +252,20 @@ body {
     top: 0.5vw;
     left: 30vw;
     transform: rotate(8deg);
-    /* display: none; */
+    display: none;
 }
 
-/********ANIMATION FADE UD V. TRYK PÅ PLAY KNAP***********/
+/********ANIMATION FADE UD M. TALEBOBBLE OG BAGGRUND***********/
 
 .fade_out_intro {
-    animation-name: fade;
+    animation-name: fade_out;
     animation-duration: 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
 }
 
-@keyframes fade {
+@keyframes fade_out {
     0% {
         opacity: 0;
     }
