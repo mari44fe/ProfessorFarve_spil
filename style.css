@@ -647,6 +647,8 @@ body {
 
 }
 
+/******ANIMATION**********/
+
 .fade_out {
     animation-name: fade;
     animation-duration: 2s;
