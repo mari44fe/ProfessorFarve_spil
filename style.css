@@ -20,7 +20,7 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
-    /* display: none; */
+    display: none;
 }
 
 #play_knap {
@@ -32,25 +32,7 @@ body {
     top: 16vw;
     left: 40vw;
     z-index: 1;
-    /* display: none; */
-}
-
-.fade_out {
-    animation-name: fade;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-}
-
-@keyframes fade {
-    from {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-    }
+    display: none;
 }
 
 
@@ -63,6 +45,7 @@ body {
     top: 15vw;
     left: 50vw;
     z-index: 5;
+    display: none;
 }
 
 #lime_boble2 {
@@ -74,6 +57,7 @@ body {
     top: 5vw;
     left: 45vw;
     z-index: 6;
+    display: none;
 }
 
 #pink_boble {
@@ -85,6 +69,7 @@ body {
     top: 23vw;
     left: 50vw;
     z-index: 6;
+    display: none;
 }
 
 #pink_boble2 {
@@ -96,6 +81,7 @@ body {
     top: 13vw;
     left: 45vw;
     z-index: 6;
+    display: none;
 }
 
 #setting_knap {
@@ -107,6 +93,8 @@ body {
     left: 92.5vw;
     top: 1vw;
 }
+
+/********ANIMATION BOBLER FRA KOLBE***********/
 
 .boble_fly_up {
     animation-name: fly_up;
@@ -132,6 +120,26 @@ body {
     }
 }
 
+/********ANIMATION FADE UD V. TRYK PÅ PLAY KNAP***********/
+
+.fade_out {
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
 /**************BAGGRUND****************/
 
 #game_background {
@@ -143,7 +151,6 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
-    display: none;
 }
 
 /********************SETTINGS*******************/
@@ -241,7 +248,7 @@ body {
     height: 56.25vw;
     top: 0;
     left: 0;
-    display: none;
+    /* display: none; */
 
 }
 
@@ -253,7 +260,7 @@ body {
     height: 10vw;
     top: 11vw;
     left: 56.8vw;
-    display: none;
+    /* display: none; */
 }
 
 #lilla_kolbe {
@@ -264,7 +271,7 @@ body {
     height: 10.5vw;
     top: 28.5vw;
     left: 80vw;
-    display: none;
+    /* display: none; */
 }
 
 #lime_kolbe {
@@ -275,7 +282,7 @@ body {
     height: 10.5vw;
     top: 19vw;
     left: 65.8vw;
-    display: none;
+    /* display: none; */
 }
 
 #pink_kolbe {
@@ -286,7 +293,7 @@ body {
     height: 5vw;
     top: 19vw;
     left: 74.3vw;
-    display: none;
+    /* display: none; */
 }
 
 #groen_kolbe {
@@ -297,7 +304,7 @@ body {
     height: 9vw;
     top: 31.3vw;
     left: 66.7vw;
-    display: none;
+    /*  display: none; */
 }
 
 #gul_kolbe {
@@ -308,7 +315,7 @@ body {
     height: 8vw;
     top: 26vw;
     left: 56.6vw;
-    display: none;
+    /* display: none; */
 }
 
 #orange_kolbe {
@@ -319,7 +326,7 @@ body {
     height: 10vw;
     top: 12vw;
     left: 79.9vw;
-    display: none;
+    /*  display: none; */
 }
 
 #roed_kolbe {
@@ -330,7 +337,7 @@ body {
     height: 5vw;
     top: 12vw;
     left: 70.3vw;
-    display: none;
+    /*  display: none; */
 }
 
 #bombe {
@@ -341,8 +348,27 @@ body {
     height: 8.5vw;
     top: 43.5vw;
     left: 35vw;
-    display: none;
+    /*  display: none; */
 }
+
+
+/********ANIMATION BOMBE RYSTER*************/
+/* .ryste {
+    animation-name: ryste;
+    animation-duration: 0.5s;
+    animation-iteration-count: 6;
+
+}
+
+@keyframes ryste {
+    from {
+        transform: rotate(-180deg);
+    }
+
+    to {
+        transform: rotate(90deg);
+    }
+} */
 
 #points {
     background-image: url(grafik/level_up_knap.svg);
@@ -352,7 +378,7 @@ body {
     height: 9vw;
     top: 43.5vw;
     left: 81vw;
-    display: none;
+    /* display: none; */
 }
 
 #energi {
@@ -363,7 +389,7 @@ body {
     height: 2.5vw;
     top: 47.5vw;
     left: 45vw;
-    display: none;
+    /* display: none; */
 }
 
 #time {
@@ -374,7 +400,87 @@ body {
     height: 15.7vw;
     left: 0.5vw;
     top: 1vw;
-    display: none;
+    /* display: none; */
+}
+
+#draabe {
+    background-image: url(grafik/draabe.svg);
+    position: absolute;
+    background-size: 100%;
+    height: 3vw;
+    width: 2vw;
+    top: 27vw;
+    left: 32vw;
+    z-index: 3;
+
+}
+
+#regnbue_boble {
+    background-image: url(grafik/regnbue_boble.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 5vw;
+    width: 5vw;
+    top: 0vw;
+    left: 25vw;
+    z-index: 4;
+}
+
+#bla_boble {
+    background-image: url(grafik/bla_boble.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 4vw;
+    width: 4vw;
+    top: 5vw;
+    left: 35vw;
+    opacity: 0.8;
+    z-index: 4;
+}
+
+
+/**************ANIMATION BOBLER FLYVER OP**********/
+
+.svaev {
+    animation-name: flyv_op;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes flyv_op {
+    from {
+        transform: translateY(20vw);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 0;
+    }
+}
+
+
+/*************ANIMATION DRYP NED I KOLBE************/
+
+.dryp {
+    animation-name: dryp;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes dryp {
+    from {
+        transform: translateY(0vw);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(5vw);
+        opacity: 0;
+    }
 }
 
 /*********************GAME OVER*********************/
@@ -390,8 +496,8 @@ body {
     z-index: -1;
     display: none;
 
-
 }
+
 
 #gameover {
     background-image: url(grafik/game_over.svg);
