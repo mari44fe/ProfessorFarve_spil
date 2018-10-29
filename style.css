@@ -164,7 +164,7 @@ body {
     width: 85vw;
     height: 51vw;
     z-index: 1;
-    /* display: none; */
+    display: none;
 
 }
 
@@ -177,7 +177,7 @@ body {
     top: 17vw;
     left: 50vw;
     z-index: 2;
-    /* display: none; */
+    display: none;
 
 
 }
@@ -191,7 +191,7 @@ body {
     top: 27.5vw;
     left: 65.5vw;
     z-index: 2;
-    /* display: none; */
+    display: none;
 
 
 }
@@ -205,9 +205,11 @@ body {
     top: 34.5vw;
     left: 48.5vw;
     z-index: 2;
-    /* display: none; */
+    display: none;
 
 }
+
+/*********ANIMATION***********/
 
 .fade_out {
     animation-name: fade;
@@ -239,7 +241,6 @@ body {
     left: 0;
     z-index: 0;
     display: none;
-
 
 }
 
@@ -280,14 +281,14 @@ body {
 }
 
 /* .fade_out_introskaerm {
-    animation-name: fade;
+    animation-name: fade_out;
     animation-duration: 5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
 }
 
-@keyframes fade {
+@keyframes fade_out {
     from {
         opacity: 1;
     }
@@ -307,7 +308,7 @@ body {
     height: 56.25vw;
     top: 0;
     left: 0;
-    display: none;
+    /*  display: none; */
 
 }
 
@@ -319,7 +320,7 @@ body {
     height: 10vw;
     top: 11vw;
     left: 56.8vw;
-    display: none;
+    /*  display: none; */
 }
 
 #lilla_kolbe {
@@ -330,7 +331,7 @@ body {
     height: 10.5vw;
     top: 28.5vw;
     left: 80vw;
-    display: none;
+    /* display: none; */
 }
 
 #lime_kolbe {
@@ -341,7 +342,7 @@ body {
     height: 10.5vw;
     top: 19vw;
     left: 65.8vw;
-    display: none;
+    /* display: none; */
 }
 
 #pink_kolbe {
@@ -352,7 +353,7 @@ body {
     height: 5vw;
     top: 19vw;
     left: 74.3vw;
-    display: none;
+    /*  display: none; */
 }
 
 #groen_kolbe {
@@ -363,7 +364,7 @@ body {
     height: 9vw;
     top: 31.3vw;
     left: 66.7vw;
-    display: none;
+    /*  display: none; */
 }
 
 #gul_kolbe {
@@ -374,7 +375,7 @@ body {
     height: 8vw;
     top: 26vw;
     left: 56.6vw;
-    display: none;
+    /* display: none; */
 }
 
 #orange_kolbe {
@@ -385,7 +386,7 @@ body {
     height: 10vw;
     top: 12vw;
     left: 79.9vw;
-    display: none;
+    /* display: none; */
 }
 
 #roed_kolbe {
@@ -396,7 +397,7 @@ body {
     height: 5vw;
     top: 12vw;
     left: 70.3vw;
-    display: none;
+    /* display: none; */
 }
 
 #bombe {
@@ -407,7 +408,7 @@ body {
     height: 8.5vw;
     top: 43.5vw;
     left: 35vw;
-    display: none;
+    /* display: none; */
 }
 
 
@@ -437,7 +438,7 @@ body {
     height: 9vw;
     top: 43.5vw;
     left: 81vw;
-    display: none;
+    /* display: none; */
 }
 
 #energi {
@@ -448,7 +449,7 @@ body {
     height: 2.5vw;
     top: 47.5vw;
     left: 45vw;
-    display: none;
+    /* display: none; */
 }
 
 #time {
@@ -459,7 +460,7 @@ body {
     height: 15.7vw;
     left: 0.5vw;
     top: 1vw;
-    display: none;
+    /* display: none; */
 }
 
 #draabe {
@@ -471,7 +472,7 @@ body {
     top: 27vw;
     left: 32vw;
     z-index: 3;
-    display: none;
+    /*  display: none; */
 
 }
 
@@ -484,7 +485,7 @@ body {
     top: 0vw;
     left: 25vw;
     z-index: 4;
-    display: none;
+    /*  display: none; */
 }
 
 #bla_boble {
@@ -497,7 +498,7 @@ body {
     left: 35vw;
     opacity: 0.8;
     z-index: 4;
-    display: none;
+    /* display: none; */
 }
 
 
@@ -560,6 +561,36 @@ body {
 
 }
 
+#bombe_sky {
+    background-image: url(grafik/sky.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 12.8vw;
+    width: 20vw;
+    top: 1vw;
+    left: 1vw;
+    z-index: 9;
+    display: none;
+}
+
+.flyve_sky {
+    animation-name: flyve;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+}
+
+@keyframes flyve {
+    from {
+        transform: translateX(0vw);
+    }
+
+    to {
+        transform: translateX(80vw);
+    }
+}
+
 
 #gameover {
     background-image: url(grafik/game_over.svg);
@@ -614,4 +645,22 @@ body {
     display: none;
 
 
+}
+
+.fade_out {
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
 }
