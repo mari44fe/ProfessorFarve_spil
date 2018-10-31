@@ -53,21 +53,24 @@ function showSettings() {
 
 function hideSettings() {
     //skjul baggrund
-    document.querySelector("#game_background").classList.remove("show");
+    document.querySelector("#game_background").classList.add("fade_out");
     //skjul settings menu
-    document.querySelector("#settings").classList.remove("show");
+    //document.querySelector("#settings").classList.remove("show");
     //stop animation på tilbageknap
     document.querySelector("#tilbage").classList.remove("pulse");
+    //fade stettings ud
+    document.querySelector("#settings").classList.add("fade_out");
+
 }
 
 // når fade-animationen er færdig -> startGame
 
-//document.querySelector("#settings").addEventListener("animationend", showStart);
+document.querySelector("#settings").addEventListener("animationend", showStart);
 
 
 function hideStart() {
     console.log("hideStart");
-    //start animation på kolbe -bobler
+    //stop animation på kolbe -bobler
     document.querySelector("#lime_boble").classList.remove("fly_up");
     document.querySelector("#lime_boble").classList.remove("fly_up");
     document.querySelector("#lime_boble2").classList.remove("fly_up");
@@ -89,7 +92,7 @@ function startGame() {
     document.querySelector("#start").classList.add("hide");
     //vis baggrund
     document.querySelector("#game_background").classList.add("show");
-    //vis spilskærm
+    //vis intro skærm
     document.querySelector("#game_foreground_intro").classList.add("show");
     document.querySelector("#intro_tekst").classList.add("show");
 
