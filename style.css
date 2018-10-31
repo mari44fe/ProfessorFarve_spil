@@ -108,7 +108,6 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
-    display: none;
 }
 
 /********************SETTINGS*******************/
@@ -121,8 +120,6 @@ body {
     left: 10vw;
     width: 85vw;
     height: 51vw;
-    z-index: 1;
-    display: none;
 
 }
 
@@ -134,8 +131,7 @@ body {
     height: 8.9vw;
     top: 17vw;
     left: 50vw;
-    z-index: 2;
-    display: none;
+
 
 
 }
@@ -148,8 +144,6 @@ body {
     height: 4.5vw;
     top: 27.5vw;
     left: 65.5vw;
-    z-index: 2;
-    display: none;
 
 
 }
@@ -162,8 +156,6 @@ body {
     height: 12vw;
     top: 34.5vw;
     left: 48.5vw;
-    z-index: 2;
-    display: none;
 
 }
 
@@ -197,16 +189,15 @@ body {
 }
 
 #frem {
-    background-image: url(grafik/tilbage_knap.svg);
+    background-image: url(grafik/frem_knap.svg);
     background-size: 100%;
     position: absolute;
     width: 12vw;
     height: 12vw;
-    top: 34.5vw;
-    left: 48.5vw;
-    z-index: 2;
+    top: 43vw;
+    left: 85vw;
     transform: rotate(180deg);
-    display: none;
+    /*   display: none; */
 
 }
 
@@ -727,11 +718,11 @@ body {
 
 @keyframes pulse_kf {
     0% {
-        transform: scale(0.97);
+        transform: scale(1);
     }
 
     100% {
-        transform: scale(1);
+        transform: scale(1.1);
     }
 }
 
@@ -752,6 +743,24 @@ body {
         transform: scale(0);
     }
 }
+
+.fade_in {
+    animation-name: fadein;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 
 
 */
