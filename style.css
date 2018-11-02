@@ -3,6 +3,8 @@
     width: 100vw;
     height: 56.25vw;
     overflow: hidden;
+    background-image: url(grafik/baggrund.svg);
+    background-size: 100%;
 
     /*  touch-action: none;*/
     -moz-user-select: none;
@@ -99,7 +101,7 @@ body {
 
 /**************BAGGRUND****************/
 
-#game_background {
+/* #game_background {
     background-image: url(grafik/baggrund.svg);
     background-size: 100%;
     width: 100vw;
@@ -109,7 +111,7 @@ body {
     left: 0;
     z-index: -1;
 }
-
+ */
 /********************SETTINGS*******************/
 
 #settings {
@@ -190,7 +192,7 @@ body {
 }
 
 #frem {
-    background-image: url(grafik/frem_knap.svg);
+    background-image: url(grafik/frem%20knap.svg);
     background-size: 100%;
     position: absolute;
     width: 12vw;
@@ -198,6 +200,8 @@ body {
     top: 43vw;
     left: 85vw;
     transform: rotate(180deg);
+    z-index: 3;
+    cursor: pointer;
     /*   display: none; */
 
 }
@@ -332,16 +336,6 @@ body {
     display: none;
 }
 
-#energi {
-    background-image: url(grafik/energi_bar.svg);
-    background-size: 100%;
-    position: absolute;
-    width: 36vw;
-    height: 2.5vw;
-    top: 47.5vw;
-    left: 45vw;
-    display: none;
-}
 
 #time {
     background-image: url(grafik/stopur.svg);
@@ -727,6 +721,25 @@ body {
     }
 }
 
+.pulse2 {
+    animation-name: pulse_kf;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+}
+
+
+@keyframes pulse_kf {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
 .dissappear {
     animation-name: dissappear_kf;
     animation-duration: .7s;
@@ -747,7 +760,7 @@ body {
 
 .fade_in {
     animation-name: fadein;
-    animation-duration: .5s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
